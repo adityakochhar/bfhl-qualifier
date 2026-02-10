@@ -4,17 +4,6 @@ Express API with:
 - `POST /bfhl` for **AI**, **HCF**, **LCM**, **PRIME**, **FIBONACCI**
 - `GET /health`
 
-## Screenshots
-
-Place your screenshots in a folder named `screenshots/` at the project root, using these filenames:
-
-- `screenshots/post-ai.png`
-- `screenshots/post-hcf.png`
-- `screenshots/post-lcm.png`
-- `screenshots/post-prime.png`
-- `screenshots/post-fibonacci.png`
-- `screenshots/get-health.png`
-
 ## POST - AI
 
 **Endpoint**: `POST /bfhl`  
