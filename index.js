@@ -70,7 +70,7 @@ app.post('/bfhl', async (req, res) => {
         } 
         else if (AI !== undefined) {
             // Integration with Gemini API [cite: 100]
-            const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+            const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
             const prompt = `Answer this in a single word: ${AI}`;
             const result = await model.generateContent(prompt);
             const response = await result.response;
