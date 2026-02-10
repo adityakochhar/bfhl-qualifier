@@ -89,8 +89,7 @@ app.post('/bfhl', async (req, res) => {
             if (typeof AI !== 'string') throw new Error("AI input must be a string");
 
             // 4. TIMEOUT HANDLING & CORRECT MODEL
-            // Switched to 'gemini-1.5-flash' (2.5 doesn't exist yet via API)
-            const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+            const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
             const prompt = `Answer this in a single word: ${AI}`;
 
             // Race: Either AI finishes, OR we timeout after 8 seconds
